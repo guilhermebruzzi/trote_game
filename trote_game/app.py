@@ -43,13 +43,16 @@ def index():
         3: [
             u"Hmm, num é muito comum os calouros chegarem nessa sala.",
             u"É bom que você não esteja trapaceando.",
-            u"Você não imagina o que a gente faz com quem trapaceia..."
+            u"Você não imagina o que a gente faz com quem trapaceia...",
+            u"Mas tudo bem... Da mesma forma que quase nenhum calouro chega aqui, quase nenhum sai daqui vitorioso.",
+            u"Vamos ao que interessa...",
         ]
     }
 
     desafios = {
         1: u"Eu sou sua primeira desafiante. Escolha o que você quer fazer enquanto eu tomo uma cerveja:",
         2: u"Não me faça perder mais tempo, escolhe logo o que você quer!:",
+        3: u"O que você deseja fazer?",
     }
 
     opcoes = {
@@ -64,6 +67,12 @@ def index():
             u"Desafiar na amarelinha.",
             u"Tentar fugir para sala 3.",
             u"Tentar fugir para sala 5.",
+        ],
+        3: [
+            u"Desafiar na competição de bebida.",
+            u"Desafiar na bola de gude.",
+            u"Tentar fugir para sala 5.",
+            u"Tentar fugir para sala 6.",
         ],
     }
 
@@ -134,6 +143,40 @@ def index():
                 ],
                 "tipo": "passou",
                 "sala": 5
+            }
+        },
+        3: {
+            1: {
+                "textos": [
+                    u"Você já bebeu alguma vez na vida?",
+                    u"Foi muito fácil ganhar de você! hahaha"
+                ],
+                "tipo": "perdeu",
+                },
+            2: {
+                "textos": [
+                    u"Amarelinha é um jogo de criança.",
+                    u"Não me surpreende que você tenha ganhado.",
+                    u"Vai logo pra sala 3.",
+                ],
+                "tipo": "passou",
+                "sala": 4
+            },
+            3: {
+                "textos": [
+                    u"Ora, cadê o calouro?",
+                    u"Alguém levou ele pra outra sala?",
+                ],
+                "tipo": "passou",
+                "sala": 5
+            },
+            4: {
+                "textos": [
+                    u"Ora, cadê o calouro?",
+                    u"Alguém levou ele pra outra sala?",
+                ],
+                "tipo": "passou",
+                "sala": 6
             }
         },
     }
