@@ -16,6 +16,8 @@ html, body{
     margin: 0 auto;
     padding: 0;
     width: 960px;
+    overflow: hidden;
+    font-family: Kreon;
 }
 
 .logo{
@@ -24,12 +26,12 @@ html, body{
     overflow: hidden;
 }
 
-.logo a{
+.logo a {
+    background: url("/static/img/trote-game.jpg") no-repeat scroll left top transparent;
     display: block;
-    background: url('/static/img/trote-game.jpg') no-repeat top left scroll transparent;
-    width: 600px;
-    height: 250px;
-    margin: 0px auto;
+    height: 129px;
+    margin: 0 auto;
+    width: 450px;
 }
 
 h2{
@@ -48,7 +50,7 @@ label{
 }
 
 .hidden{
-    display: none;
+    display: none !important;
 }
 
 footer {

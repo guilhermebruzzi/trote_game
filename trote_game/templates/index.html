@@ -1,4 +1,5 @@
 {% extends "master.html" %}
+{% import 'sala.html' as sala %}
 
 {% block title %}Trote Game - Jogue contra os veteranos{% endblock %}
 
@@ -6,9 +7,12 @@
 
 {% block content %}
 <ul class="cenario">
-    <li class="sala_inicial">sala_inicial</li>
-    <li class="sala_1">sala_1</li>
-    <li class="sala_2">sala_2</li>
+    {{ sala.sala_template(1, textos1) }}
+    {{ sala.sala_template(2, textos2) }}
+    {{ sala.sala_template(3, textos3) }}
+    {{ sala.sala_template(4, textos4) }}
+    {{ sala.sala_template(5, textos5) }}
+    {{ sala.sala_template(6, textos6) }}
 </ul>
 {% endblock %}
 

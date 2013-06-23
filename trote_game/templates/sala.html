@@ -1,0 +1,13 @@
+{% macro sala_template(sala_id, textos) -%}
+    <li class="sala sala-{{ sala_id }}">
+        <div class="balao">
+            {% for texto in textos %}
+                <p class="fala fala-{{ loop.index0 }} {% if loop.index0 > 0 %}hidden{% endif %}">
+                    <span class="texto linha">{{ texto }}</span>
+                    <a href="#" class="continuar linha" data-next="{{ loop.index }}">Continuar <span class="setinha">&raquo;</span></a>
+                </p>
+            {% endfor %}
+        </div>
+        <div class="veterana{{ sala_id }}"></div>
+    </li>
+{%- endmacro %}
