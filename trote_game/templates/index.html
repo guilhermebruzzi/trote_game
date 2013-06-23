@@ -7,12 +7,12 @@
 
 {% block content %}
 <ul class="cenario">
-    {{ sala.sala_template(1, textos[1]) }}
-    {{ sala.sala_template(2, textos[1]) }}
-    {{ sala.sala_template(3, textos[1]) }}
-    {{ sala.sala_template(4, textos[1]) }}
-    {{ sala.sala_template(5, textos[1]) }}
-    {{ sala.sala_template(6, textos[1]) }}
+    {{ sala.sala_template(1, textos[1], desafios[1], opcoes[1], resultados[1], resultados_ids) }}
+    {{ sala.sala_template(2, textos[2], desafios[2], opcoes[2], resultados[2], resultados_ids) }}
+    {{ sala.sala_template(3, textos[3], desafios[3], opcoes[3], resultados[3], resultados_ids) }}
+    {{ sala.sala_template(4, textos[4], desafios[4], opcoes[4], resultados[4], resultados_ids) }}
+    {{ sala.sala_template(5, textos[1], desafios[1], opcoes[1], resultados[1], resultados_ids) }}
+    {{ sala.sala_template(6, textos[1], desafios[1], opcoes[1], resultados[1], resultados_ids) }}
 </ul>
 {% endblock %}
 
