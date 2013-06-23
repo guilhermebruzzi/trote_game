@@ -86,7 +86,9 @@ def index():
         }
     }
 
-    return render_template("index.html", textos=textos, desafios=desafios, opcoes=opcoes, resultados=resultados)
+    return render_template("index.html", textos=textos, desafios=desafios,
+                                         opcoes=opcoes, resultados=resultados,
+                                         resultados_ids=[1, 2, 3, 4])
 
 if __name__ == '__main__':
     # Bind to PORT if defined, otherwise default to 5000.

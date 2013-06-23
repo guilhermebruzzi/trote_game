@@ -27,30 +27,68 @@
     width: 435px;
 }
 
-.veterana1 {
-    background: url("/static/img/veterana1.png") no-repeat scroll left top transparent;
+.veterana{
     display: block;
     height: 400px;
     left: 122px;
     position: absolute;
     top: 223px;
+}
+
+.veterana1 {
+    background: url("/static/img/veterana1.png") no-repeat scroll left top transparent;
+    width: 128px;
+}
+
+.veterana2 {
+    background: url("/static/img/veterana2.png") no-repeat scroll left top transparent;
+    width: 119px;
+}
+
+.veterana3 {
+    background: url("/static/img/veterana3.png") no-repeat scroll left top transparent;
+    width: 116px;
+}
+
+.veterana4 {
+    background: url("/static/img/veterana4.png") no-repeat scroll left top transparent;
+    width: 119px;
+}
+
+.veterana5 {
+    background: url("/static/img/veterana5.png") no-repeat scroll left top transparent;
+    width: 116px;
+}
+
+.veterana6 {
+    background: url("/static/img/veterana6.png") no-repeat scroll left top transparent;
     width: 128px;
 }
 
 .fala {
     color: #333333;
     display: block;
-    font-size: 18px;
+    font-size: 16px;
     height: auto;
-    left: 84px;
+    left: 74px;
     position: absolute;
-    top: 15px;
+    top: 18px;
     width: 300px;
+}
+
+.desafio{
+    top: 28px;
+}
+
+.opcoes li {
+    font-size: 14px;
+    list-style: none outside none;
 }
 
 .continuar{
     font-size: 14px;
     color: #666;
+    margin-top: 5px;
 }
 
 .continuar:hover,
