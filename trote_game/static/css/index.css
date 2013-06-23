@@ -1,1 +1,65 @@
 /* Estilo específico para o jogo */
+
+.cenario{
+    display: block;
+    width: 1000000px;
+    position: relative;
+    left: 0px;
+    z-index: 1;
+}
+
+.sala{
+    display: block;
+    float: left;
+    width: 900px;
+    height: 641px;
+    position: relative;
+    background: url('/static/img/sala.jpg') no-repeat top left scroll transparent;
+}
+
+.balao {
+    background: url("/static/img/balao.png") no-repeat scroll left top transparent;
+    display: block;
+    height: 300px;
+    left: 112px;
+    position: absolute;
+    top: -37px;
+    width: 435px;
+}
+
+.veterana1 {
+    background: url("/static/img/veterana1.png") no-repeat scroll left top transparent;
+    display: block;
+    height: 400px;
+    left: 122px;
+    position: absolute;
+    top: 223px;
+    width: 128px;
+}
+
+.fala {
+    color: #333333;
+    display: block;
+    font-size: 18px;
+    height: auto;
+    left: 84px;
+    position: absolute;
+    top: 15px;
+    width: 300px;
+}
+
+.continuar{
+    font-size: 14px;
+    color: #666;
+}
+
+.continuar:hover,
+.continuar:active{
+    color: #555;
+}
+
+.linha{
+    display: inline-block;
+    width: 100%;
+    margin: 5px 0 0 0;
+}

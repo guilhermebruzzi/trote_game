@@ -26,7 +26,13 @@ def robots():
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    return render_template("index.html")
+    textos = [
+        u"Olá bem vindo ao trote game",
+        u"Ou não! hahaha"
+    ]
+    textos1 = textos2 = textos3 = textos4 = textos5 = textos6 = textos
+    return render_template("index.html",
+        textos1=textos1, textos2=textos2,textos3=textos3,textos4=textos4,textos5=textos5,textos6=textos6)
 
 
 if __name__ == '__main__':
