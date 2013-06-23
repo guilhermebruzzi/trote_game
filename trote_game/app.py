@@ -46,6 +46,14 @@ def index():
             u"Você não imagina o que a gente faz com quem trapaceia...",
             u"Mas tudo bem... Da mesma forma que quase nenhum calouro chega aqui, quase nenhum sai daqui vitorioso.",
             u"Vamos ao que interessa...",
+        ],
+        4: [
+            u"Olha o que temos aqui... Um calouro.",
+            u"Como você chegou nessa sala?",
+            u"Se eu descobrir que você anda trapaceando por aí, você vai se ver comigo...",
+        ],
+        7: [
+            u"Parabéns, você está bem perto...",
         ]
     }
 
@@ -53,6 +61,7 @@ def index():
         1: u"Eu sou sua primeira desafiante. Escolha o que você quer fazer enquanto eu tomo uma cerveja:",
         2: u"Não me faça perder mais tempo, escolhe logo o que você quer!:",
         3: u"O que você deseja fazer?",
+        4: u"O que você deseja fazer agora?",
     }
 
     opcoes = {
@@ -73,6 +82,12 @@ def index():
             u"Desafiar na bola de gude.",
             u"Tentar fugir para sala 5.",
             u"Tentar fugir para sala 6.",
+        ],
+        4: [
+            u"Desafiar na amarelinha.",
+            u"Desafiar no totó.",
+            u"Tentar fugir para sala 6.",
+            u"Tentar fugir para a super sala.",
         ],
     }
 
@@ -152,7 +167,7 @@ def index():
                     u"Foi muito fácil ganhar de você! hahaha"
                 ],
                 "tipo": "perdeu",
-                },
+            },
             2: {
                 "textos": [
                     u"Amarelinha é um jogo de criança.",
@@ -177,6 +192,40 @@ def index():
                 ],
                 "tipo": "passou",
                 "sala": 6
+            }
+        },
+        4: {
+            1: {
+                "textos": [
+                    u"Amarelinha é um jogo de criança.",
+                    u"Não me surpreende que você tenha ganhado.",
+                    u"Vai logo pra sala 3.",
+                ],
+                "tipo": "passou",
+                "sala": 5
+            },
+            2: {
+                "textos": [
+                    u"",
+                    u"Não me surpreende que você tenha ganhado.",
+                    u"Vai logo pra sala 3.",
+                ],
+                "tipo": "passou",
+                "sala": 6
+            },
+            3: {
+                "textos": [
+                    u"Hmm, espertinho você.",
+                    u"Você achou mesmo que eu não ia perceber que você tentou fugir?"
+                ],
+                "tipo": "perdeu",
+            },
+            4: {
+                "textos": [
+                    u"Hmm, espertinho você.",
+                    u"Você achou mesmo que eu não ia perceber que você tentou fugir?"
+                ],
+                "tipo": "perdeu",
             }
         },
     }
