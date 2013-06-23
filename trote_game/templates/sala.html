@@ -1,10 +1,34 @@
-{% macro sala_template(sala_id, textos) -%}
+{% macro sala_template(sala_id, textos, desafio, opcoes, resultados) -%}
     <li class="sala sala-{{ sala_id }}">
         <div class="balao">
             {% for texto in textos %}
                 <p class="fala fala-{{ loop.index0 }} {% if loop.index0 > 0 %}hidden{% endif %}">
                     <span class="texto linha">{{ texto }}</span>
-                    <a href="#" class="continuar linha" data-next="{{ loop.index }}">Continuar <span class="setinha">&raquo;</span></a>
+                    <a href="#" class="continuar linha" data-next="{% if loop.last %}desafio{% else %}fala-{{ loop.index }}{% endif %}">Continuar <span class="setinha">&raquo;</span></a>
+                </p>
+            {% endfor %}
+            <p class="fala desafio hidden">
+                <span class="texto linha">{{ desafio }}</span>
+                <ul class="opcoes">
+                    {% for opcao in opcoes %}
+                    <li>
+                        {% set opcao_id = sala_id + "-" + loop.index0 -%}
+                        <input type="radio" id="opcao-{{ opcao_id }}" class="opcao" value="{{ opcao_id }}" >
+                        <label for="opcao-{{ opcao_id }}" class="opcao-label">{{ opcao }}</label>
+                    </li>
+                    {% endfor %}
+                </ul>
+                <a href="#" class="continuar linha" data-next="resultados-{{ sala_id }}">Continuar <span class="setinha">&raquo;</span></a>
+            </p>
+        </div>
+        <div class="veterana{{ sala_id }}"></div>
+    </li>
+    <li class="sala resultados-{{ sala_id }} hidden">
+        <div class="balao">
+            {% for resultado in resultados %}
+                <p class="fala resultado-{{ loop.index0 }}">
+                    <span class="texto linha">{{ resultado }}</span>
+                    <a href="#" class="continuar linha" data-next="">Continuar <span class="setinha">&raquo;</span></a>
                 </p>
             {% endfor %}
         </div>
