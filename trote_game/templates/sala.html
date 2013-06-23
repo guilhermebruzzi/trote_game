@@ -2,7 +2,7 @@
     <li id="sala-{{ sala_id }}" data-sala="{{ sala_id }}" class="sala sala-{{ sala_id }}">
         <div class="balao">
             {% for texto in textos %}
-                <p class="fala fala-{{ loop.index0 }} {% if loop.index0 > 0 %}hidden{% endif %}">
+                <p class="fala fala-{{ loop.index0 }}{% if loop.index0 > 0 %} hidden{% endif %}">
                     <span class="texto linha">{{ texto }}</span>
                     <a href="#" class="continuar linha" data-next="{% if loop.last %}desafio{% else %}fala-{{ loop.index }}{% endif %}">Continuar <span class="setinha">&raquo;</span></a>
                 </p>
@@ -28,7 +28,7 @@
     <li id="resultados-{{ sala_id }}-{{ resultado_id }}" class="sala resultados-{{ sala_id }}-{{ resultado_id }} hidden" data-tipo="{{ resultado["tipo"] }}" data-sala="{{ resultado["sala"] }}">
         <div class="balao">
             {% for resultado in resultados[resultado_id]["textos"] %}
-            <p class="fala resultado-{{ sala_id }}-{{ loop.index0 }} hidden">
+            <p class="fala resultado-{{ sala_id }}-{{ loop.index0 }}{% if loop.index0 > 0 %} hidden{% endif %}">
                 <span class="texto linha">{{ resultado }}</span>
                 <a href="#" class="continuar linha" data-next="resultado-{{ sala_id }}-{{ loop.index }}">Continuar <span class="setinha">&raquo;</span></a>
             </p>

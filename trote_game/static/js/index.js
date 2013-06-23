@@ -14,15 +14,15 @@ function exibeResultados(elm, proximo){
     var sala = $(elm).parent().parent().parent();
     var salaId = sala.data("sala");
     sala.addClass("hidden");
-    var resultados = sala.parent().find("." + proximo);
-    resultados.removeClass("hidden");
     var resultadoId = "";
     $(".opcao-sala-" + salaId).each(function(){
         if($(this).is(":checked")){
             resultadoId = $(this).val();
         }
     });
-    $("#resultados-" + salaId + "-" + resultadoId).removeClass("hidden");
+    var resultados = $("#resultados-" + salaId + "-" + resultadoId);
+    resultados.removeClass("hidden");
+    resultados.find(".resultado-" + salaId + "-0").removeClass("hidden");
 }
 
 $(document).ready(function(){
