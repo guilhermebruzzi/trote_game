@@ -52,6 +52,11 @@ def index():
             u"Como você chegou nessa sala?",
             u"Se eu descobrir que você anda trapaceando por aí, você vai se ver comigo...",
         ],
+        5: [
+            u"Bem vindo à sala 5.",
+            u"Acho que você não vai conseguir vencer tão cedo, hahaha",
+            u"Mas vamos lá.",
+        ],
         7: [
             u"Parabéns, você está bem perto...",
         ]
@@ -62,6 +67,7 @@ def index():
         2: u"Não me faça perder mais tempo, escolhe logo o que você quer!:",
         3: u"O que você deseja fazer?",
         4: u"O que você deseja fazer agora?",
+        5: u"Qual opção você escolhe?",
     }
 
     opcoes = {
@@ -88,6 +94,12 @@ def index():
             u"Desafiar no totó.",
             u"Tentar fugir para sala 6.",
             u"Tentar fugir para a super sala.",
+        ],
+        5: [
+            u"Desafiar na sinuca.",
+            u"Desafiar no totó.",
+            u"Tentar fugir para sala 1.",
+            u"Tentar fugir para sala 2.",
         ],
     }
 
@@ -226,6 +238,39 @@ def index():
                     u"Você achou mesmo que eu não ia perceber que você tentou fugir?"
                 ],
                 "tipo": "perdeu",
+            }
+        },
+        5: {
+            1: {
+                "textos": [
+                    u"Nossa, o que aconteceu comigo?",
+                    u"É raro eu perder na sinuca.",
+                    u"Sorte sua...",
+                ],
+                "tipo": "passou",
+                "sala": 6
+            },
+            2: {
+                "textos": [
+                    u"Você achou mesmo que ia me ganhar no totó?",
+                    u"Nunca!",
+                ],
+                "tipo": "perdeu",
+            },
+            3: {
+                "textos": [
+                    u"Hmm, espertinho você.",
+                    u"Você achou mesmo que eu não ia perceber que você tentou fugir?"
+                ],
+                "tipo": "perdeu",
+            },
+            4: {
+                "textos": [
+                    u"Ora, cadê o calouro?",
+                    u"Alguém levou ele pra outra sala?",
+                ],
+                "tipo": "passou",
+                "sala": 2
             }
         },
     }
