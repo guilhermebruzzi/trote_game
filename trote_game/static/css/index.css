@@ -12,7 +12,7 @@
     display: block;
     float: left;
     width: 900px;
-    height: 641px;
+    height: 654px;
     position: relative;
     background: url('/static/img/sala.jpg') no-repeat top left scroll transparent;
 }
@@ -23,7 +23,7 @@
     height: 300px;
     left: 112px;
     position: absolute;
-    top: -37px;
+    top: 0px;
     width: 435px;
 }
 
