@@ -1,0 +1,77 @@
+html, body{
+    font-family: arial;
+    margin:0;
+    padding:0;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+.content {
+    font-family: arial;
+    margin: 0 auto;
+    padding: 0;
+    width: 960px;
+}
+
+.logo{
+    text-indent: -99999px;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo a{
+    display: block;
+    background: url('/static/img/trote-game.jpg') no-repeat top left scroll transparent;
+    width: 600px;
+    height: 250px;
+    margin: 0px auto;
+}
+
+h2{
+    font-size: 16px;
+    margin-top: 20px;
+    display: block;
+}
+
+label{
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.error{
+    color: red;
+}
+
+.hidden{
+    display: none;
+}
+
+footer {
+    text-align: center;
+    font-size: 16px;
+    line-height: 17px;
+    color: #333;
+    height: 64px;
+    width: 960px;
+    border-top: 1px solid rgba(66, 66, 66, 0.3);
+    margin: 50px auto 30px;
+}
+
+footer a {
+    color: #333;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    font-weight: bold;
+}
+
+footer a.new_link{
+    font-weight: bold;
+    font-size: 16px;
+}

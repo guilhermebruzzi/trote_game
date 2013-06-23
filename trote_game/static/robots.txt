@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://trote-game.herokuapp.com/sitemap.xml
