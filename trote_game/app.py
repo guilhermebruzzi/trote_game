@@ -26,14 +26,44 @@ def robots():
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    textos = [
-        u"Olá bem vindo ao trote game",
-        u"Ou não! hahaha"
-    ]
-    textos1 = textos2 = textos3 = textos4 = textos5 = textos6 = textos
-    return render_template("index.html",
-        textos1=textos1, textos2=textos2,textos3=textos3,textos4=textos4,textos5=textos5,textos6=textos6)
+    textos = {
+        1: [
+            u"Olá bem vindo ao trote game.",
+            u"Ou não! hahaha",
+            u"Nosso trote é um pouco diferente.",
+            u"Você tem a opção de escolher o que você quer fazer.",
+            u"Mas se você escolher a opção errada, você vai arcar com as consequências! hahaha"
+        ]
+    }
 
+    desafios = {
+        1: u"Eu sou sua primeira desafiante. Escolha o que você quer fazer enquanto eu tomo uma cerveja:",
+    }
+
+    opcoes = {
+        1: [
+            u"Desafiar na sinuca.",
+            u"Desafiar na competição de bebida.",
+            u"Tentar fugir para sala 2.",
+            u"Tentar fugir para sala 6.",
+        ]
+    }
+
+    resultados = {
+        1: {
+            1: {
+                "textos": [
+                    u"Bem, não foi uma boa ideia ter tomado aquela cerveja antes da sinuca.",
+                    u"Se eu não tivesse bebido minha pontaria seria bem melhor.",
+                    u"Você não teria me ganhado."
+                    u"Agora você pode ir pra sala 2!"
+                ],
+                "tipo": "passou"
+            }
+        }
+    }
+
+    return render_template("index.html", textos=textos, desafios=desafios, opcoes=opcoes, resultados=resultados)
 
 if __name__ == '__main__':
     # Bind to PORT if defined, otherwise default to 5000.
