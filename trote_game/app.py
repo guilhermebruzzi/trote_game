@@ -33,11 +33,23 @@ def index():
             u"Nosso trote é um pouco diferente.",
             u"Você tem a opção de escolher o que você quer fazer.",
             u"Mas se você escolher a opção errada, você vai arcar com as consequências! hahaha"
+        ],
+        2: [
+            u"Bom dia, calouro!",
+            u"Vemos que você conseguiu vencer o primeiro desafio.",
+            u"E isso me deixa muito irritado.",
+            u"É bom você tomar cuidado...",
+        ],
+        3: [
+            u"Hmm, num é muito comum os calouros chegarem nessa sala.",
+            u"É bom que você não esteja trapaceando.",
+            u"Você não imagina o que a gente faz com quem trapaceia..."
         ]
     }
 
     desafios = {
         1: u"Eu sou sua primeira desafiante. Escolha o que você quer fazer enquanto eu tomo uma cerveja:",
+        2: u"Não me faça perder mais tempo, escolhe logo o que você quer!:",
     }
 
     opcoes = {
@@ -46,7 +58,13 @@ def index():
             u"Desafiar na competição de bebida.",
             u"Tentar fugir para sala 2.",
             u"Tentar fugir para sala 3.",
-        ]
+        ],
+        2: [
+            u"Desafiar na queda de braço.",
+            u"Desafiar na amarelinha.",
+            u"Tentar fugir para sala 3.",
+            u"Tentar fugir para sala 5.",
+        ],
     }
 
     resultados = {
@@ -70,20 +88,54 @@ def index():
             },
             3: {
                 "textos": [
-                    u"Você já bebeu alguma vez na vida?",
-                    u"Foi muito fácil ganhar de você! hahaha"
+                    u"Hmm, espertinho você.",
+                    u"Você achou mesmo que eu não ia perceber que você tentou fugir?"
                 ],
                 "tipo": "perdeu"
             },
             4: {
                 "textos": [
-                    u"Você já bebeu alguma vez na vida?",
-                    u"Foi muito fácil ganhar de você! hahaha"
+                    u"Ora, cadê o calouro?",
+                    u"Alguém levou ele pra outra sala?",
                 ],
                 "tipo": "passou",
                 "sala": 3
             }
-        }
+        },
+        2: {
+            1: {
+                "textos": [
+                    u"Você achou mesmo que me ganharia na queda de braço?",
+                    u"Na queda de braço?",
+                    u"Você não tem força nem pra levantar uma pena!"
+                ],
+                "tipo": "perdeu",
+            },
+            2: {
+                "textos": [
+                    u"Amarelinha é um jogo de criança.",
+                    u"Não me surpreende que você tenha ganhado.",
+                    u"Vai logo pra sala 3.",
+                ],
+                "tipo": "passou",
+                "sala": 3
+            },
+            3: {
+                "textos": [
+                    u"Hmm, espertinho você.",
+                    u"Você achou mesmo que eu não ia perceber que você tentou fugir?"
+                ],
+                "tipo": "perdeu"
+            },
+            4: {
+                "textos": [
+                    u"Ora, cadê o calouro?",
+                    u"Alguém levou ele pra outra sala?",
+                ],
+                "tipo": "passou",
+                "sala": 5
+            }
+        },
     }
 
     return render_template("index.html", textos=textos, desafios=desafios, opcoes=opcoes, resultados=resultados)
