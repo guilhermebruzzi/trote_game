@@ -57,6 +57,10 @@ def index():
             u"Acho que você não vai conseguir vencer tão cedo, hahaha",
             u"Mas vamos lá.",
         ],
+        6: [
+            u"Parabéns, essa é a última sala.",
+            u"Não que isso vá te ajudar muito, hahaha",
+        ],
         7: [
             u"Parabéns, você está bem perto...",
         ]
@@ -68,6 +72,7 @@ def index():
         3: u"O que você deseja fazer?",
         4: u"O que você deseja fazer agora?",
         5: u"Qual opção você escolhe?",
+        6: u"O que você quer fazer?",
     }
 
     opcoes = {
@@ -101,6 +106,12 @@ def index():
             u"Tentar fugir para sala 1.",
             u"Tentar fugir para sala 2.",
         ],
+        6: [
+            u"Desafiar na bola de gude.",
+            u"Desafiar no ping pong.",
+            u"Tentar fugir para sala 2.",
+            u"Tentar fugir para a super sala.",
+        ],
     }
 
     resultados = {
@@ -109,7 +120,7 @@ def index():
                 "textos": [
                     u"Bem, não foi uma boa ideia ter tomado aquela cerveja antes da sinuca.",
                     u"Se eu não tivesse bebido minha pontaria seria bem melhor.",
-                    u"Você não teria me ganhado."
+                    u"Você não teria me ganhado.",
                     u"Agora você pode ir pra sala 2!"
                 ],
                 "tipo": "passou",
@@ -271,6 +282,41 @@ def index():
                 ],
                 "tipo": "passou",
                 "sala": 2
+            }
+        },
+        6: {
+            1: {
+                "textos": [
+                    u"Parabéns, você ganhou de mim...",
+                    u"Só por causa disso você vai voltar pra sala 5, hahaha",
+                ],
+                "tipo": "passou",
+                "sala": 5
+            },
+            2: {
+                "textos": [
+                    u"Não acredito que eu perdi pra você logo no ping pong.",
+                    u"Eu não perco no ping pong!",
+                    u"Vou querer uma revanche!",
+                    u"Você continua nessa sala!",
+                ],
+                "tipo": "passou",
+                "sala": 6
+            },
+            3: {
+                "textos": [
+                    u"Ora, cadê o calouro?",
+                    u"Alguém levou ele pra outra sala?",
+                ],
+                "tipo": "passou",
+                "sala": 2
+            },
+            4: {
+                "textos": [
+                    u"Hmm, espertinho você.",
+                    u"Você achou mesmo que eu não ia perceber que você tentou fugir?"
+                ],
+                "tipo": "perdeu",
             }
         },
     }
