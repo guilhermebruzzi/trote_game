@@ -45,7 +45,7 @@ def index():
             u"Desafiar na sinuca.",
             u"Desafiar na competição de bebida.",
             u"Tentar fugir para sala 2.",
-            u"Tentar fugir para sala 6.",
+            u"Tentar fugir para sala 3.",
         ]
     }
 
@@ -58,7 +58,30 @@ def index():
                     u"Você não teria me ganhado."
                     u"Agora você pode ir pra sala 2!"
                 ],
-                "tipo": "passou"
+                "tipo": "passou",
+                "sala": 2
+            },
+            2: {
+                "textos": [
+                    u"Você já bebeu alguma vez na vida?",
+                    u"Foi muito fácil ganhar de você! hahaha"
+                ],
+                "tipo": "perdeu"
+            },
+            3: {
+                "textos": [
+                    u"Você já bebeu alguma vez na vida?",
+                    u"Foi muito fácil ganhar de você! hahaha"
+                ],
+                "tipo": "perdeu"
+            },
+            4: {
+                "textos": [
+                    u"Você já bebeu alguma vez na vida?",
+                    u"Foi muito fácil ganhar de você! hahaha"
+                ],
+                "tipo": "passou",
+                "sala": 3
             }
         }
     }
