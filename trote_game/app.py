@@ -63,11 +63,6 @@ def index():
         ],
         7: [
             u"Parabéns, você está bem perto...",
-        ],
-        8: [
-            u"Você virou uma lenda na faculdade!",
-            u"Ninguém tinha conseguido vencer uma batalha de sabre de luz de um veterano, parabéns!",
-            u"Agora todos os veteranos estão te pagando bebidas.",
         ]
     }
 
@@ -358,10 +353,12 @@ def index():
             4: {
                 "textos": [
                     u"Parabéns, você ganhou a competição de sabre de luz!",
-                    u"Todos os veteranos agora te adoram!"
+                    u"Todos os veteranos agora te adoram!",
+                    u"Você virou uma lenda na faculdade!",
+                    u"Ninguém tinha conseguido vencer uma batalha de sabre de luz de um veterano!",
+                    u"Agora todos os veteranos estão te pagando bebidas."
                 ],
-                "tipo": "passou",
-                "sala": 8
+                "tipo": "venceu"
             }
         },
     }

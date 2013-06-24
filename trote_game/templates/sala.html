@@ -37,7 +37,7 @@
                     {% elif resultado["tipo"] == "perdeu" %}
                     <a href="" class="continuar linha" data-next="perdeu">Você perdeu! :( Jogar novamente?</a>
                     {% else %}
-                    <a href="" class="continuar linha" data-next="venceu">Parabéns, você perdeu! :) Jogar novamente?</a>
+                    <a href="" class="continuar linha" data-next="venceu">Parabéns, você ganhou! :) Jogar novamente?</a>
                     {% endif %}
                 {% else %}
                     <a href="#" class="continuar linha" data-next="resultado-{{ sala_id }}-{{ loop.index }}">Continuar <span class="setinha">&raquo;</span></a>
