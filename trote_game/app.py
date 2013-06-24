@@ -57,8 +57,17 @@ def index():
             u"Acho que você não vai conseguir vencer tão cedo, hahaha",
             u"Mas vamos lá.",
         ],
+        6: [
+            u"Parabéns, essa é a última sala.",
+            u"Não que isso vá te ajudar muito, hahaha",
+        ],
         7: [
             u"Parabéns, você está bem perto...",
+        ],
+        8: [
+            u"Você virou uma lenda na faculdade!",
+            u"Ninguém tinha conseguido vencer uma batalha de sabre de luz de um veterano, parabéns!",
+            u"Agora todos os veteranos estão te pagando bebidas.",
         ]
     }
 
@@ -68,6 +77,8 @@ def index():
         3: u"O que você deseja fazer?",
         4: u"O que você deseja fazer agora?",
         5: u"Qual opção você escolhe?",
+        6: u"O que você quer fazer?",
+        7: u"Escolha uma das opções:",
     }
 
     opcoes = {
@@ -101,6 +112,18 @@ def index():
             u"Tentar fugir para sala 1.",
             u"Tentar fugir para sala 2.",
         ],
+        6: [
+            u"Desafiar na bola de gude.",
+            u"Desafiar no ping pong.",
+            u"Tentar fugir para sala 2.",
+            u"Tentar fugir para a super sala.",
+        ],
+        7: [
+            u"Desafiar na amarelinha.",
+            u"Desafiar no totó.",
+            u"Tentar fugir para sala 6.",
+            u"Disputar competição de sabre de luz.",
+        ],
     }
 
     resultados = {
@@ -109,7 +132,7 @@ def index():
                 "textos": [
                     u"Bem, não foi uma boa ideia ter tomado aquela cerveja antes da sinuca.",
                     u"Se eu não tivesse bebido minha pontaria seria bem melhor.",
-                    u"Você não teria me ganhado."
+                    u"Você não teria me ganhado.",
                     u"Agora você pode ir pra sala 2!"
                 ],
                 "tipo": "passou",
@@ -271,6 +294,76 @@ def index():
                 ],
                 "tipo": "passou",
                 "sala": 2
+            }
+        },
+        6: {
+            1: {
+                "textos": [
+                    u"Parabéns, você ganhou de mim...",
+                    u"Só por causa disso você vai voltar pra sala 5, hahaha",
+                ],
+                "tipo": "passou",
+                "sala": 5
+            },
+            2: {
+                "textos": [
+                    u"Não acredito que eu perdi pra você logo no ping pong.",
+                    u"Eu não perco no ping pong!",
+                    u"Vou querer uma revanche!",
+                    u"Você continua nessa sala!",
+                ],
+                "tipo": "passou",
+                "sala": 6
+            },
+            3: {
+                "textos": [
+                    u"Ora, cadê o calouro?",
+                    u"Alguém levou ele pra outra sala?",
+                ],
+                "tipo": "passou",
+                "sala": 2
+            },
+            4: {
+                "textos": [
+                    u"Hmm, espertinho você.",
+                    u"Você achou mesmo que eu não ia perceber que você tentou fugir?"
+                ],
+                "tipo": "perdeu",
+            }
+        },
+        7: {
+            1: {
+                "textos": [
+                    u"Amarelinha é um jogo de criança.",
+                    u"Não me surpreende que você tenha ganhado.",
+                    u"Vai logo pra sala 3.",
+                ],
+                "tipo": "passou",
+                "sala": 5
+            },
+            2: {
+                "textos": [
+                    u"",
+                    u"Não me surpreende que você tenha ganhado.",
+                    u"Vai logo pra sala 3.",
+                ],
+                "tipo": "passou",
+                "sala": 6
+            },
+            3: {
+                "textos": [
+                    u"Hmm, espertinho você.",
+                    u"Você achou mesmo que eu não ia perceber que você tentou fugir?"
+                ],
+                "tipo": "perdeu",
+            },
+            4: {
+                "textos": [
+                    u"Parabéns, você ganhou a competição de sabre de luz!",
+                    u"Todos os veteranos agora te adoram!"
+                ],
+                "tipo": "passou",
+                "sala": 8
             }
         },
     }
