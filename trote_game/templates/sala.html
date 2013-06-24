@@ -46,6 +46,9 @@
             {% endfor %}
         </div>
         <div class="veterana veterana{{ sala_id }}"></div>
+        {% if resultado['figura'] %}
+        <div class="figura {{ resultado['figura'] }}"></div>
+        {% endif %}
         <p class="numero-sala">Você está na sala {% if sala_id == 7 %}4{% else %}{{ sala_id }}{% endif %}</p>
     </li>
     {% endfor %}

@@ -81,6 +81,43 @@
     width: 221px;
 }
 
+.figura{
+    display: block;
+    position: absolute;
+    right: 200px;
+    top: 372px;
+}
+
+.amarelinha {
+    background: url("/static/img/amarelinha.png") no-repeat scroll left top transparent;
+    height: 350px;
+    width: 380px;
+}
+
+.mesa-sinuca {
+    background: url("/static/img/mesa-sinuca.png") no-repeat scroll left top transparent;
+    height: 350px;
+    width: 349px;
+}
+
+.mesa-bebida {
+    background: url("/static/img/mesa-bebida.png") no-repeat scroll left top transparent;
+    height: 350px;
+    width: 186px;
+}
+
+.mesa-bolinha-gude{
+    background: url("/static/img/mesa-bolinha-gude.png") no-repeat scroll left top transparent;
+    height: 350px;
+    width: 386px;
+}
+
+.mesa-toto{
+    background: url("/static/img/mesa-toto.png") no-repeat scroll left top transparent;
+    height: 350px;
+    width: 421px;
+}
+
 .fala {
     color: #333333;
     display: block;

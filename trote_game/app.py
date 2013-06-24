@@ -131,14 +131,16 @@ def index():
                     u"Agora você pode ir pra sala 2!"
                 ],
                 "tipo": "passou",
-                "sala": 2
+                "sala": 2,
+                "figura": "mesa-sinuca"
             },
             2: {
                 "textos": [
                     u"Você já bebeu alguma vez na vida?",
                     u"Foi muito fácil ganhar de você! hahaha"
                 ],
-                "tipo": "perdeu"
+                "tipo": "perdeu",
+                "figura": "mesa-bebida"
             },
             3: {
                 "textos": [
@@ -172,7 +174,8 @@ def index():
                     u"Vai logo pra sala 3.",
                 ],
                 "tipo": "passou",
-                "sala": 3
+                "sala": 3,
+                "figura": "amarelinha"
             },
             3: {
                 "textos": [
@@ -197,15 +200,17 @@ def index():
                     u"Foi muito fácil ganhar de você! hahaha"
                 ],
                 "tipo": "perdeu",
+                "figura": "mesa-bebida"
             },
             2: {
                 "textos": [
-                    u"Esse chão não é liso!",
+                    u"Essa mesa não é lisa!",
                     u"Você ganhou por sorte!",
                     u"Pode ir pra sala 4.",
                 ],
                 "tipo": "passou",
-                "sala": 4
+                "sala": 4,
+                "figura": "mesa-bolinha-gude"
             },
             3: {
                 "textos": [
@@ -232,7 +237,8 @@ def index():
                     u"Vai logo pra sala 5.",
                 ],
                 "tipo": "passou",
-                "sala": 5
+                "sala": 5,
+                "figura": "amarelinha"
             },
             2: {
                 "textos": [
@@ -240,7 +246,8 @@ def index():
                     u"Pode ir pra sala 6.",
                 ],
                 "tipo": "passou",
-                "sala": 6
+                "sala": 6,
+                "figura": "mesa-toto"
             },
             3: {
                 "textos": [
