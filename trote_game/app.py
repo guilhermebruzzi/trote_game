@@ -207,6 +207,7 @@ def index():
                 "textos": [
                     u"Esse chão não é liso!",
                     u"Você ganhou por sorte!",
+                    u"Pode ir pra sala 4.",
                 ],
                 "tipo": "passou",
                 "sala": 4
@@ -233,7 +234,7 @@ def index():
                 "textos": [
                     u"Amarelinha é um jogo de criança.",
                     u"Não me surpreende que você tenha ganhado.",
-                    u"Vai logo pra sala 3.",
+                    u"Vai logo pra sala 5.",
                 ],
                 "tipo": "passou",
                 "sala": 5
@@ -334,16 +335,15 @@ def index():
                 "textos": [
                     u"Amarelinha é um jogo de criança.",
                     u"Não me surpreende que você tenha ganhado.",
-                    u"Vai logo pra sala 3.",
+                    u"Vai logo pra sala 5.",
                 ],
                 "tipo": "passou",
                 "sala": 5
             },
             2: {
                 "textos": [
-                    u"",
-                    u"Não me surpreende que você tenha ganhado.",
-                    u"Vai logo pra sala 3.",
+                    u"Eu não sei jogar totó.",
+                    u"Pode ir pra sala 6.",
                 ],
                 "tipo": "passou",
                 "sala": 6
