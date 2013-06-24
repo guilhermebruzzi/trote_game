@@ -27,6 +27,17 @@
     width: 435px;
 }
 
+.numero-sala {
+    border: 1px solid #000000;
+    color: #222222;
+    display: block;
+    font-size: 20px;
+    padding: 20px;
+    position: absolute;
+    right: 79px;
+    top: 96px;
+}
+
 .veterana{
     display: block;
     height: 400px;

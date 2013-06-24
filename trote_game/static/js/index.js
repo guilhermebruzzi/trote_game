@@ -1,14 +1,16 @@
 if (typeof String.prototype.startsWith != 'function') {
-    // see below for better implementation!
     String.prototype.startsWith = function (str){
-        return this.indexOf(str) == 0;
+        return this.slice(0, str.length) == str;
     };
 }
+
 if (typeof String.prototype.endsWith != 'function') {
     String.prototype.endsWith = function (str){
         return this.slice(-str.length) == str;
     };
 }
+
+var jaPassouPelaSala6 = false; // Necessário para ganhar o jogo
 
 function exibeResultados(elm, proximo){
     var sala = $(elm).parent().parent().parent();
@@ -30,14 +32,33 @@ function exibeResultados(elm, proximo){
     resultados.find(".resultado-" + salaId + "-0").removeClass("hidden");
 }
 
+function mostraSalaDaVez(sala){
+    $(".sala").addClass("hidden");
+    sala.removeClass("hidden");
+    var salaId = sala.data("sala");
+    $(".fala").addClass("hidden");
+    sala.find(".fala-0").removeClass("hidden");
+    sala.find(".opcao-sala-" + salaId).each(function(){
+        $(this).prop('checked', false);
+    });
+}
+
 function exibeSala(elm, proximo){
     var resultados = $(elm).parent().parent().parent();
     resultados.addClass("hidden");
-    $(".sala").addClass("hidden");
+
     var sala = $("#" + proximo);
-    sala.removeClass("hidden");
-    $(".fala").addClass("hidden");
-    sala.find(".fala-0").removeClass("hidden");
+    var salaId = sala.data("sala");
+    if(salaId == 6){
+        jaPassouPelaSala6 = true;
+    }
+    if(jaPassouPelaSala6 && salaId == 4){
+        sala = $("#sala-7"); // Última sala
+        mostraSalaDaVez(sala);
+    }
+    else{
+        mostraSalaDaVez(sala);
+    }
 }
 
 $(document).ready(function(){
