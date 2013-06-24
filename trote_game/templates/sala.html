@@ -25,12 +25,22 @@
     </li>
     {% for resultado_id in resultados_ids %}
     {% set resultado = resultados[resultado_id] -%}
-    <li id="resultados-{{ sala_id }}-{{ resultado_id }}" class="sala resultados-{{ sala_id }}-{{ resultado_id }} hidden" data-tipo="{{ resultado["tipo"] }}" data-sala="{{ resultado["sala"] }}">
+    <li id="resultados-{{ sala_id }}-{{ resultado_id }}" class="sala resultados-{{ sala_id }}-{{ resultado_id }} hidden">
         <div class="balao">
-            {% for resultado in resultados[resultado_id]["textos"] %}
+            {% for texto in resultados[resultado_id]["textos"] %}
             <p class="fala resultado-{{ sala_id }}-{{ loop.index0 }}{% if loop.index0 > 0 %} hidden{% endif %}">
-                <span class="texto linha">{{ resultado }}</span>
-                <a href="#" class="continuar linha" data-next="resultado-{{ sala_id }}-{{ loop.index }}">Continuar <span class="setinha">&raquo;</span></a>
+                <span class="texto linha">{{ texto }}</span>
+                {% if loop.last %}
+                    {% if resultado["tipo"] == "passou" %}
+                    <a href="#" class="continuar linha" data-next="sala-{{ resultado["sala"] }}">Continuar <span class="setinha">&raquo;</span></a>
+                    {% elif resultado["tipo"] == "perdeu" %}
+                    <a href="" class="continuar linha" data-next="perdeu">Jogar novamente <span class="setinha">&raquo;</span></a>
+                    {% else %}
+                    <a href="" class="continuar linha" data-next="venceu">Jogar novamente <span class="setinha">&raquo;</span></a>
+                    {% endif %}
+                {% else %}
+                    <a href="#" class="continuar linha" data-next="resultado-{{ sala_id }}-{{ loop.index }}">Continuar <span class="setinha">&raquo;</span></a>
+                {% endif %}
             </p>
             {% endfor %}
         </div>

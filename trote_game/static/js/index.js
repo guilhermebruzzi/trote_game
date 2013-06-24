@@ -25,12 +25,27 @@ function exibeResultados(elm, proximo){
     resultados.find(".resultado-" + salaId + "-0").removeClass("hidden");
 }
 
+function exibeSala(elm, proximo){
+    var resultados = $(elm).parent().parent().parent();
+    resultados.addClass("hidden");
+    $(".sala").addClass("hidden");
+    var sala = $("#" + proximo);
+    sala.removeClass("hidden");
+    sala.find(".fala-0").removeClass("hidden");
+}
+
 $(document).ready(function(){
     $(document).on('click', ".continuar", function(event){
         var proximo = $(this).data("next");
         $(".fala").addClass("hidden");
         if (proximo.startsWith("resultados-")){
             exibeResultados(this, proximo);
+        }
+        else if(proximo.startsWith("sala-")){
+            exibeSala(this, proximo)
+        }
+        else if(proximo == "perdeu" || proximo == "venceu"){
+            return true;
         }
         else{
             $("." + proximo).removeClass("hidden");
