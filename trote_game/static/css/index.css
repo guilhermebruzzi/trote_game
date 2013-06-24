@@ -63,21 +63,23 @@
 
 .veterana4 {
     background: url("/static/img/veterana4.png") no-repeat scroll left top transparent;
-    width: 119px;
+    width: 145px;
 }
 
 .veterana5 {
     background: url("/static/img/veterana5.png") no-repeat scroll left top transparent;
-    width: 116px;
+    width: 128px;
 }
 
 .veterana6 {
     background: url("/static/img/veterana6.png") no-repeat scroll left top transparent;
-    width: 128px;
+    width: 146px;
 }
 
 .veterana7 {
     background: url("/static/img/jedi.png") no-repeat scroll left top transparent;
+    left: 55px;
+    top: 256px;
     width: 221px;
 }
 
@@ -90,8 +92,9 @@
 
 .amarelinha {
     background: url("/static/img/amarelinha.png") no-repeat scroll left top transparent;
-    height: 350px;
-    width: 380px;
+    height: 250px;
+    top: 480px;
+    width: 270px;
 }
 
 .mesa-sinuca {
@@ -102,14 +105,23 @@
 
 .mesa-bebida {
     background: url("/static/img/mesa-bebida.png") no-repeat scroll left top transparent;
-    height: 350px;
-    width: 186px;
+    height: 300px;
+    width: 159px;
+    top: 350px;
 }
 
-.mesa-bolinha-gude{
+.mesa-bolinha-gude {
     background: url("/static/img/mesa-bolinha-gude.png") no-repeat scroll left top transparent;
     height: 350px;
+    right: 220px;
+    top: 395px;
     width: 386px;
+}
+
+.mesa-ping-pong {
+    background: url("/static/img/mesa-ping-pong.png") no-repeat scroll left top transparent;
+    width: 348px;
+    height: 292px;
 }
 
 .mesa-toto{

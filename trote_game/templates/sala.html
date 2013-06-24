@@ -22,7 +22,7 @@
             </div>
         </div>
         <div class="veterana veterana{{ sala_id }}"></div>
-        <p class="numero-sala">Você está na sala {{ sala_id }}</p>
+        <p class="numero-sala">Você está na sala {% if sala_id == 7 %}4{% else %}{{ sala_id }}{% endif %}</p>
     </li>
     {% for resultado_id in resultados_ids %}
     {% set resultado = resultados[resultado_id] -%}

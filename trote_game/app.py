@@ -36,7 +36,7 @@ def index():
         ],
         2: [
             u"Bom dia, calouro!",
-            u"Vemos que você conseguiu vencer o primeiro desafio.",
+            u"Vemos que você conseguiu vencer o desafio.",
             u"E isso me deixa muito irritado.",
             u"É bom você tomar cuidado...",
         ],
@@ -272,7 +272,8 @@ def index():
                     u"Sorte sua...",
                 ],
                 "tipo": "passou",
-                "sala": 6
+                "sala": 6,
+                "figura": "mesa-sinuca"
             },
             2: {
                 "textos": [
@@ -280,6 +281,7 @@ def index():
                     u"Nunca!",
                 ],
                 "tipo": "perdeu",
+                "figura": "mesa-toto"
             },
             3: {
                 "textos": [
@@ -314,7 +316,8 @@ def index():
                     u"Você continua nessa sala!",
                 ],
                 "tipo": "passou",
-                "sala": 6
+                "sala": 6,
+                "figura": "mesa-ping-pong"
             },
             3: {
                 "textos": [
