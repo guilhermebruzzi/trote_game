@@ -13,13 +13,18 @@ if (typeof String.prototype.endsWith != 'function') {
 function exibeResultados(elm, proximo){
     var sala = $(elm).parent().parent().parent();
     var salaId = sala.data("sala");
-    sala.addClass("hidden");
     var resultadoId = "";
     $(".opcao-sala-" + salaId).each(function(){
         if($(this).is(":checked")){
             resultadoId = $(this).val();
         }
     });
+    if(resultadoId == ""){
+        alert("Escolha uma opcao!");
+        return;
+    }
+    $(".fala").addClass("hidden");
+    sala.addClass("hidden");
     var resultados = $("#resultados-" + salaId + "-" + resultadoId);
     resultados.removeClass("hidden");
     resultados.find(".resultado-" + salaId + "-0").removeClass("hidden");
@@ -31,13 +36,13 @@ function exibeSala(elm, proximo){
     $(".sala").addClass("hidden");
     var sala = $("#" + proximo);
     sala.removeClass("hidden");
+    $(".fala").addClass("hidden");
     sala.find(".fala-0").removeClass("hidden");
 }
 
 $(document).ready(function(){
     $(document).on('click', ".continuar", function(event){
         var proximo = $(this).data("next");
-        $(".fala").addClass("hidden");
         if (proximo.startsWith("resultados-")){
             exibeResultados(this, proximo);
         }
@@ -48,6 +53,7 @@ $(document).ready(function(){
             return true;
         }
         else{
+            $(".fala").addClass("hidden");
             $("." + proximo).removeClass("hidden");
         }
         event.preventDefault();
