@@ -76,6 +76,11 @@
     width: 128px;
 }
 
+.veterana7 {
+    background: url("/static/img/jedi.png") no-repeat scroll left top transparent;
+    width: 221px;
+}
+
 .fala {
     color: #333333;
     display: block;
