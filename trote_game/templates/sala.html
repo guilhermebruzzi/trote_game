@@ -34,9 +34,9 @@
                     {% if resultado["tipo"] == "passou" %}
                     <a href="#" class="continuar linha" data-next="sala-{{ resultado["sala"] }}">Continuar <span class="setinha">&raquo;</span></a>
                     {% elif resultado["tipo"] == "perdeu" %}
-                    <a href="" class="continuar linha" data-next="perdeu">Jogar novamente <span class="setinha">&raquo;</span></a>
+                    <a href="" class="continuar linha" data-next="perdeu">Você perdeu! :( Jogar novamente?</a>
                     {% else %}
-                    <a href="" class="continuar linha" data-next="venceu">Jogar novamente <span class="setinha">&raquo;</span></a>
+                    <a href="" class="continuar linha" data-next="venceu">Parabéns, você perdeu! :) Jogar novamente?</a>
                     {% endif %}
                 {% else %}
                     <a href="#" class="continuar linha" data-next="resultado-{{ sala_id }}-{{ loop.index }}">Continuar <span class="setinha">&raquo;</span></a>
