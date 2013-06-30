@@ -1,5 +1,36 @@
 /* Estilo específico para o jogo */
 
+.capa-do-jogo{
+    width: 443px;
+    height: 700px;
+    position: relative;
+    background: url('/static/img/capa-do-jogo.jpg') no-repeat top left scroll transparent;
+    margin: 0 auto;
+}
+
+.botao-entrar {
+    background-color: #FFFFFF;
+    background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.05), rgba(255,255,255,.05));
+    background-image: -moz-linear-gradient(bottom, rgba(0,0,0,.05), rgba(255,255,255,.05));
+    background-image: -o-linear-gradient(bottom, rgba(0,0,0,.05), rgba(255,255,255,.05));
+    background-image: -ms-linear-gradient(bottom, rgba(0,0,0,.05), rgba(255,255,255,.05));
+    background-image: linear-gradient(to top, rgba(0,0,0,.05), rgba(255,255,255,.05));
+    border: 1px solid #E5E5E5;
+    border-radius: 3px 3px 3px 3px;
+    bottom: 312px;
+    color: #EC1D14;
+    display: inline-block;
+    font-family: "Decker Bold";
+    font-size: 24px;
+    height: auto;
+    left: 130px;
+    padding: 10px 20px;
+    position: absolute;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: auto;
+}
+
 .cenario{
     display: block;
     width: 1000000px;
@@ -14,7 +45,34 @@
     width: 900px;
     height: 654px;
     position: relative;
-    background: url('/static/img/sala.jpg') no-repeat top left scroll transparent;
+    background: url('/static/img/sala1.jpg') no-repeat top left scroll transparent;
+}
+
+.sala-1,
+.resultados-fundo-1,
+.sala-5,
+.resultados-fundo-5,
+{
+    background: url('/static/img/sala1.jpg') no-repeat top left scroll transparent;
+}
+
+.sala-2,
+.resultados-fundo-2,
+.sala-3,
+.resultados-fundo-3 {
+    background: url('/static/img/sala2.jpg') no-repeat top left scroll transparent;
+}
+
+.sala-4,
+.resultados-fundo-4,
+.sala-7,
+.resultados-fundo-7 {
+    background: url('/static/img/sala4.jpg') no-repeat top left scroll transparent;
+}
+
+.sala-6,
+.resultados-fundo-6 {
+    background: url('/static/img/sala6.jpg') no-repeat top left scroll transparent;
 }
 
 .balao {
@@ -93,7 +151,7 @@
 .amarelinha {
     background: url("/static/img/amarelinha.png") no-repeat scroll left top transparent;
     height: 250px;
-    top: 480px;
+    top: 544px;
     width: 270px;
 }
 
@@ -120,8 +178,9 @@
 
 .mesa-ping-pong {
     background: url("/static/img/mesa-ping-pong.png") no-repeat scroll left top transparent;
-    width: 348px;
-    height: 292px;
+    width: 299px;
+    height: 183px;
+    top: 466px;
 }
 
 .mesa-toto{

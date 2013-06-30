@@ -306,7 +306,8 @@ def index():
                     u"Só por causa disso você vai voltar pra sala 5, hahaha",
                 ],
                 "tipo": "passou",
-                "sala": 5
+                "sala": 5,
+                "figura": "mesa-bolinha-gude"
             },
             2: {
                 "textos": [
@@ -373,8 +374,11 @@ def index():
         },
     }
 
+    jogar_de_novo = True if "jogar-de-novo" in request.args and request.args.get("jogar-de-novo") == "true" else False
+
     return render_template("index.html", textos=textos, desafios=desafios,
                                          opcoes=opcoes, resultados=resultados,
+                                         jogar_de_novo=jogar_de_novo,
                                          resultados_ids=[1, 2, 3, 4])
 
 if __name__ == '__main__':

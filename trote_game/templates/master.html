@@ -11,6 +11,8 @@
 
         <link href='http://fonts.googleapis.com/css?family=Kreon' rel='stylesheet' type='text/css'>
 
+        <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}" type="image/png" />
+
         {% block js_cima %}{% endblock %}
         <title>{% block title %}{% endblock %}</title>
 
@@ -21,9 +23,7 @@
 
     <section class="container">
         <header>
-            <div id="div-logo" class="div-logo">
-                <h1 class="logo" itemprop="name"><a href="/" id="logo-link" >Trote Game</a></h1>
-            </div>
+            <span class="titulo-jogo">Trote Game</span>
         </header>
         <section id="content" class="content">
             {% block content %}{% endblock %}

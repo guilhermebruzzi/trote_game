@@ -8,11 +8,10 @@ html, body{
     position: relative;
     margin: 0 auto;
     padding: 0;
-    background-color: #FFFFFF;
+    background-image: url("/static/img/textura.png");
 }
 
 .content {
-    font-family: arial;
     margin: 0 auto;
     padding: 0;
     width: 960px;
@@ -32,6 +31,15 @@ html, body{
     height: 129px;
     margin: 0 auto;
     width: 450px;
+}
+
+.titulo-jogo{
+    font-family: Kreon;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: #333333;
 }
 
 h2{
@@ -59,9 +67,10 @@ footer {
     line-height: 17px;
     color: #333;
     height: 64px;
-    width: 960px;
+    width: 100%;
     border-top: 1px solid rgba(66, 66, 66, 0.3);
     margin: 50px auto 30px;
+    background-color: #FFFFFF;
 }
 
 footer a {

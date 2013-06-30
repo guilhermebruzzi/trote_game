@@ -70,6 +70,12 @@ $(document).ready(function(){
         limpaOpcoes($(this));
     });
 
+    $(document).on('click', "#botao-entrar", function(event){
+        $("#capa-do-jogo").addClass("hidden");
+        $("#cenario").removeClass("hidden");
+        event.preventDefault();
+    });
+
     $(document).on('click', ".continuar", function(event){
         var proximo = $(this).data("next");
         if (proximo.startsWith("resultados-")){
